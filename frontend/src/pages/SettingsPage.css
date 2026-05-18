@@ -1,0 +1,121 @@
+.settings-page {
+  padding: var(--space-6);
+}
+
+.settings-page__header {
+  margin-bottom: var(--space-6);
+}
+
+.settings-page__title {
+  font-size: var(--font-2xl);
+  font-weight: var(--font-bold);
+}
+
+.settings-content {
+  padding: var(--space-4) 0;
+}
+
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.settings-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-section__header h3 {
+  font-size: var(--font-lg);
+  font-weight: var(--font-semibold);
+}
+
+.settings-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.settings-table th,
+.settings-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-sm);
+}
+
+.settings-table th {
+  background-color: var(--color-hover);
+  font-weight: var(--font-semibold);
+}
+
+.color-preview {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+}
+
+.tags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.tag-card {
+  padding: var(--space-4);
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.templates-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.template-item {
+  padding: var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.template-item__name {
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-1);
+}
+
+.template-item__pattern {
+  font-size: var(--font-xs);
+  color: var(--color-text-secondary);
+}
+
+.notification-settings {
+  padding: var(--space-4);
+}
+
+.notification-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.notification-table th,
+.notification-table td {
+  padding: var(--space-3);
+  text-align: center;
+}
+
+.notification-table td:first-child,
+.notification-table th:first-child {
+  text-align: left;
+}

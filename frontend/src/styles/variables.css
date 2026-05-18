@@ -1,0 +1,66 @@
+:root {
+  /* 색상 - Primary */
+  --color-primary: #3B82F6;
+  --color-primary-hover: #2563EB;
+  --color-primary-light: #DBEAFE;
+
+  /* 색상 - 상태 */
+  --color-success: #10B981;
+  --color-warning: #FBBF24;
+  --color-danger: #EF4444;
+  --color-info: #06B6D4;
+
+  /* 색상 - 그레이 */
+  --color-bg: #F9FAFB;
+  --color-card: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-border-dark: #D1D5DB;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6B7280;
+  --color-text-disabled: #9CA3AF;
+  --color-hover: #F3F4F6;
+
+  /* Task 상태별 색상 */
+  --status-io-progress: #FBBF24;
+  --status-io-active: #F59E0B;
+  --status-spec-progress: #60A5FA;
+  --status-spec-active: #3B82F6;
+  --status-developing: #6366F1;
+  --status-dev-done: #10B981;
+  --status-customer-confirm: #059669;
+  --status-cancelled: #6B7280;
+
+  /* 간격 */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px;
+  --space-4: 16px; --space-5: 20px; --space-6: 24px;
+  --space-8: 32px; --space-10: 40px; --space-12: 48px;
+
+  /* 폰트 */
+  --font-xs: 12px; --font-sm: 14px; --font-base: 16px;
+  --font-lg: 18px; --font-xl: 20px; --font-2xl: 24px; --font-3xl: 30px;
+  --font-normal: 400; --font-medium: 500; --font-semibold: 600; --font-bold: 700;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+
+  /* 보더 */
+  --radius-sm: 4px; --radius-md: 6px; --radius-lg: 8px;
+  --radius-xl: 12px; --radius-full: 9999px;
+
+  /* 그림자 */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+
+  /* 레이아웃 */
+  --sidebar-width: 240px;
+  --sidebar-width-collapsed: 60px;
+  --topbar-height: 56px;
+
+  --transition: 150ms ease-in-out;
+
+  /* z-index */
+  --z-dropdown: 100;
+  --z-modal-backdrop: 900;
+  --z-modal: 1000;
+  --z-toast: 2000;
+}

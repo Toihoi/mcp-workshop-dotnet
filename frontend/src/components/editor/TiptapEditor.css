@@ -1,0 +1,54 @@
+.tiptap-editor {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-card);
+}
+
+.tiptap-editor--readonly {
+  border: none;
+  background: transparent;
+}
+
+.tiptap-toolbar {
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  gap: var(--space-1);
+}
+
+.tiptap-toolbar button {
+  padding: 4px 8px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tiptap-toolbar button.is-active {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.tiptap-content {
+  padding: var(--space-4);
+  min-height: 100px;
+}
+
+.tiptap-content .ProseMirror:focus {
+  outline: none;
+}
+
+.tiptap-content .ProseMirror p {
+  margin-bottom: 0.5em;
+}
+
+.mention {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 500;
+}

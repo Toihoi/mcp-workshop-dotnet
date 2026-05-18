@@ -1,0 +1,11 @@
+.kanban-board {
+  display: flex;
+  gap: var(--space-4);
+  height: calc(100vh - 200px);
+  padding-bottom: var(--space-4);
+  overflow-x: auto;
+}
+
+.scroll-x {
+  overflow-x: auto;
+}
