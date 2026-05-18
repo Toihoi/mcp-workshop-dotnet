@@ -1,0 +1,45 @@
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: var(--font-bold);
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.avatar--sm { width: 24px; height: 24px; font-size: 10px; }
+.avatar--md { width: 32px; height: 32px; font-size: var(--font-sm); }
+.avatar--lg { width: 48px; height: 48px; font-size: var(--font-lg); }
+
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.avatar__initial {
+  text-transform: uppercase;
+}
+
+.avatar__badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.avatar__badge--partner { background-color: var(--color-warning); }
+.avatar__badge--customer { background-color: var(--color-info); }

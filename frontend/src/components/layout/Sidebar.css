@@ -1,0 +1,106 @@
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--color-card);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  transition: width var(--transition);
+  position: relative;
+}
+
+.sidebar--collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.sidebar__logo {
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-6);
+  font-weight: var(--font-bold);
+  font-size: var(--font-lg);
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--space-3);
+  overflow: hidden;
+}
+
+.logo-icon {
+  background-color: var(--color-primary);
+  color: white;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.sidebar--collapsed .sidebar__logo {
+  padding: 0;
+  justify-content: center;
+}
+
+.sidebar__nav {
+  padding: var(--space-4) var(--space-2);
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  transition: var(--transition);
+}
+
+.nav-item:hover {
+  background-color: var(--color-hover);
+  color: var(--color-text-primary);
+}
+
+.nav-item--active {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: var(--font-semibold);
+}
+
+.nav-item__icon {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.sidebar--collapsed .nav-item {
+  justify-content: center;
+  padding: var(--space-3) 0;
+}
+
+.sidebar__toggle {
+  position: absolute;
+  top: 70px;
+  right: -12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  color: var(--color-text-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar__toggle:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}

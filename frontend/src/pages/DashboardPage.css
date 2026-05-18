@@ -1,0 +1,136 @@
+.dashboard-page {
+  padding: var(--space-6);
+}
+
+.dashboard-page__header {
+  margin-bottom: var(--space-6);
+}
+
+.dashboard-page__title {
+  font-size: var(--font-2xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-1);
+}
+
+.dashboard-page__subtitle {
+  color: var(--color-text-secondary);
+  font-size: var(--font-sm);
+}
+
+.dashboard-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--space-6);
+}
+
+.dashboard-widget {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-widget--full {
+  grid-column: 1 / -1;
+}
+
+.dashboard-widget__title {
+  font-size: var(--font-base);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-4);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.project-info__item {
+  display: flex;
+  gap: var(--space-2);
+  font-size: var(--font-sm);
+}
+
+.project-info__item .label {
+  color: var(--color-text-secondary);
+  width: 60px;
+}
+
+.project-info__description {
+  margin-top: var(--space-4);
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-4);
+}
+
+.status-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.status-card__color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.status-card__name {
+  font-size: var(--font-xs);
+  color: var(--color-text-secondary);
+}
+
+.status-card__count {
+  font-size: var(--font-lg);
+  font-weight: var(--font-bold);
+}
+
+.recent-notifications {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.notification-item {
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-hover);
+}
+
+.notification-item__msg {
+  font-size: var(--font-sm);
+  margin-bottom: 2px;
+}
+
+.notification-item__time {
+  font-size: 11px;
+  color: var(--color-text-disabled);
+}
+
+.template-shortcuts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.template-btn {
+  justify-content: flex-start !important;
+}
+
+.badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badge--main { background-color: var(--color-primary-light); color: var(--color-primary); }
+.badge--additional { background-color: #FEF3C7; color: #D97706; }

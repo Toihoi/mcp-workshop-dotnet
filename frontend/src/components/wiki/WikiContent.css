@@ -1,0 +1,53 @@
+.wiki-content {
+  flex: 1;
+  padding: var(--space-10);
+  background-color: var(--color-card);
+  overflow-y: auto;
+}
+
+.wiki-content--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-disabled);
+}
+
+.wiki-content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.wiki-content__title {
+  font-size: var(--font-3xl);
+  font-weight: var(--font-bold);
+}
+
+.wiki-content__actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.wiki-content__meta {
+  font-size: var(--font-xs);
+  color: var(--color-text-disabled);
+  margin-bottom: var(--space-8);
+}
+
+.wiki-content__body {
+  line-height: 1.6;
+}
+
+.wiki-content__textarea {
+  width: 100%;
+  min-height: 500px;
+  padding: var(--space-4);
+  font-family: inherit;
+  font-size: var(--font-base);
+  resize: vertical;
+}
+
+.wiki-content__text {
+  white-space: pre-wrap;
+}
